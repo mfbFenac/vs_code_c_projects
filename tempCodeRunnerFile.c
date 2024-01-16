@@ -1,4 +1,2 @@
-        // else
-        // {
-        //     printf("%s",temp);
-        // }
+
+                aranan++;
