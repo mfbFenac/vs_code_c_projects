@@ -7,7 +7,7 @@ int main()
     static int sonuc = 0;
     sonuc = topla(10,15);
     printf("DEFINE BAS %d\n",MUSTAFA);
-    printf("sonuc %d\n",sonuc);
-    printf("global_variable %d",global_variable);
+    printf("topla(10,15);  %d\n",sonuc);
+    printf("global_variable declared in other c file : %d",global_variable);
     return 0;
 }

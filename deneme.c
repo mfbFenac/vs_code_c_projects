@@ -1,23 +1,18 @@
 #include <stdio.h>
-#include "toplama.h"
 
-int main()
-{
-    int number;
-    char name[50];
+#define POSITION_SHIFT(var,shift) do { \
+                                int new_value = var<<shift; \
+                                var = new_value; \
+                              } while(0)
 
-    printf("Enter a number: ");
-    scanf("%d", &number);
+int main() {
+    int myVariable = 8;
 
-    printf("Enter your name: ");
-    scanf(" %49[^\n]", name); // Reading a string with spaces using %[^\n]
+    printf("Before: %d\n", myVariable);
 
-    printf("Number: %d\n", number);
-    printf("Name: %s\n", name);
+    POSITION_SHIFT(myVariable,2);
 
-    // static int sonuc = 0;
-    // sonuc = topla(10,15);
-    // printf("DEFINE BAS %d\n",MUSTAFA);
-    // printf("sonuc %d",sonuc);
+    printf("After: %d\n", myVariable);
+
     return 0;
 }

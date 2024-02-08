@@ -1,0 +1,63 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "MFB COMPILER",
+			"type": "cppbuild",
+			"command": "gcc",
+            "args": [
+                "-c",
+                "${workspaceFolder}\\*.c",
+                "&&",
+				"gcc",
+				"-o",
+				"program",
+				"${workspaceFolder}\\*.o"
+            ],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\MinGW\\bin\\gcc.exe"
+		}
+	]
+}
+
+// {
+// 	"version": "2.0.0",
+// 	"tasks": [
+// 		{
+// 			"label": "MFB COMPILER",
+// 			"type": "cppbuild",
+// 			"command": "gcc",
+//             "args": [
+//                 "-c",
+//                 ".\\main.c",
+//                 ".\\adding.c",
+//                 ".\\dividing.c",
+//                 ".\\subtracting.c",
+//                 ".\\multiplying.c",
+//                 "&&",
+// 				"gcc",
+// 				"-o",
+// 				"program",
+// 				".\\main.o",
+//                 ".\\adding.o",
+//                 ".\\dividing.o",
+//                 ".\\subtracting.o",
+//                 ".\\multiplying.o",
+//             ],
+// 			"options": {
+// 				"cwd": "${workspaceFolder}"
+// 			},
+// 			"problemMatcher": [
+// 				"$gcc"
+// 			],
+// 			"group": "build",
+// 			"detail": "compiler: C:\\MinGW\\bin\\gcc.exe"
+// 		}
+// 	]
+// }

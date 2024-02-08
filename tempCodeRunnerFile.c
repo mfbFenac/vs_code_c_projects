@@ -1,2 +1,1 @@
-
-                aranan++;
+flash_read
