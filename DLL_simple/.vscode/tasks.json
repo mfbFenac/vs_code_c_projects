@@ -4,24 +4,20 @@
         {
             "label": "Build DLL",
             "type": "shell",
-            "command": "gcc",
+            "command": "cmd.exe",
             "args": [
-                "-shared",
-                "-o",
-                "hello_world.dll",
-                "hello_world.c",
-                "-Wl,--out-implib,libhello_world.a"
+                "/C",
+                "gcc -shared -o hello_world.dll hello_world.c -Wl,--out-implib,libhello_world.a"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "Build Main",
             "type": "shell",
-            "command": "gcc",
+            "command": "cmd.exe",
             "args": [
+                "/C",
+                "gcc",
                 "main.c",
                 "-o",
                 "main.exe",
@@ -29,8 +25,7 @@
                 "-lhello_world"
             ],
             "group": {
-                "kind": "build",
-                "isDefault": true
+                "kind": "build"
             }
         }
     ]

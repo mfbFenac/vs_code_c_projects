@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",
+            "preLaunchTask": "Build Main",
+            "internalConsoleOptions": "openOnSessionStart",
+            "cwd": "${workspaceFolder}",
+
+        }
+            
+    ]
+}
